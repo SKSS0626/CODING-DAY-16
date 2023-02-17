@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n, k, i,se=0,so=0;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    printf("Enter the value of k: ");
+    scanf("%d", &k);
+    for (i = 1; i <= n; i++)
+	 {
+        if (i % k == 0)
+		 {
+            printf("%d ", i);
+            if(i%2==0)
+            se=se+i;
+            else
+            so=so+i;
+        }
+    }
+    printf("\nEven sum=%d\n",se);
+    printf("Odd sum=%d\n",so);
+    return 0;
+}
